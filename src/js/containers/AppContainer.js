@@ -1,9 +1,20 @@
 import React from 'react';
+import Table from '../components/table';
 
-const AppContainer = (props) => (
-  <div>
-    <h1>Hello, React!</h1>
-  </div>
-);
+class AppContainer extends React.Component {
 
-export default AppContainer;
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    return(
+      <div>
+        <h1>Blackjack</h1>
+        <Table />
+      </div>
+    )
+  }
+}
+
+export default AppContainer
