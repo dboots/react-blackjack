@@ -29,6 +29,18 @@ let config = {
           'sass-loader',
         ]
       },
+      {
+        test: /(\.css$)/,
+        use: [
+          'style-loader!css-loader'
+        ]
+      },
+      {
+        test: /\.(gif|png|woff|woff2|eot|ttf|svg)$/,
+        use: [
+          'url-loader?limit=100000'
+        ]
+      }
     ]
   },
   plugins: [ ],
