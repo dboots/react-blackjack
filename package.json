@@ -36,7 +36,7 @@
     "react-dom": "^15.5.4"
   },
   "scripts": {
-    "dev": "webpack-dev-server --content-base public/",
+    "dev": "webpack-dev-server --content-base public/ --port 4201 --host 0.0.0.0",
     "build": "node_modules/.bin/webpack -d"
   }
 }
